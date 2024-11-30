@@ -21,9 +21,6 @@ Auth0, onde ele pode escolher logar via Google ou Facebook. Após o login bem su
 e data, além de oferece uma barra de busca para explorar o conteúdo. Na tela principal, ao selecionar um vídeos o usuário é direcionado para o plataforma do Youtube. Interface é intuitiva e responsiva, adaptando-se a qualquer dispositivo.
 
 
-Link do deploy: https://tubevideos.netlify.app/
-
-
 ![tubevideo-tela_inicial](https://github.com/user-attachments/assets/87e6b3bd-0a11-4d74-86fd-98e3e4a7c1ee)
 
 
