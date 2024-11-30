@@ -14,7 +14,7 @@ export const appConfig: ApplicationConfig = {
       domain: 'dev-edmaddob4nd7bgau.us.auth0.com',
       clientId: 'gvRoBtK5LPQu3jm9UrPwXnhGzczSZD9r',
       authorizationParams: {
-        redirect_uri: window.location.origin + '/home',
+        redirect_uri: window.location.origin,
         scope: 'openid profile email offline_access',
       },
       useRefreshTokens: true,
