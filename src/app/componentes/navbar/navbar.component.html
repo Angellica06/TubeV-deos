@@ -1,0 +1,22 @@
+<nav class="navbar shadow">
+    <h3 class="mx-2 p-1 text-light">
+        <i class="fa fa-play-circle p-1"></i>
+        TubeVídeos
+    </h3>
+
+    <ng-container *ngIf="auth.isAuthenticated$ | async; else loggedOut">
+        <div class="dropdown mx-4">
+            <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">
+                <i class="fa-solid fa-user m-1 me-2"></i>
+                <span *ngIf="user$ | async as user">{{ user.name || 'Usuário'}}</span>
+            </button>
+            <div class="dropdown-menu w-100">
+                <span class="dropdown-item pe-auto text-center p-0 m-0" (click)="auth.logout()">Logout</span>
+            </div>
+        </div>
+    </ng-container>
+
+    <ng-template #loggedOut>
+        <button class="btn btn-dark mx-3" (click)="login()">Login</button>
+    </ng-template>
+</nav>

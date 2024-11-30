@@ -1,0 +1,12 @@
+.navbar {
+    background: linear-gradient(180deg, #f23737, #d93131, #8c2020);
+}
+
+.dropdown-menu {
+    min-width: 120px !important; 
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #1B1B1B;
+}
