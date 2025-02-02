@@ -16,7 +16,7 @@ export interface Item {
   providedIn: 'root'
 })
 export class HomeService {
-  private apiUrl = window.location.hostname === 'localhost' ? 'http://localhost:3000/videos' : 'https://tubevideos.netlify.app/assets/db.json';
+  private apiUrl = 'http://localhost:3000/videos';
 
   constructor(private http: HttpClient) { }
 
